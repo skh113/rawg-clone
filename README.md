@@ -1,6 +1,6 @@
 # Rawg-clone app
 
-to start the project,
+Follow these steps to start the project:
 
 1. first install the dependencies.
 
@@ -9,7 +9,9 @@ to start the project,
    npm i
    ```
 
-2. simply start the project.
+2. get your API key from <https://rawg.io> and put in .env file
+
+3. simply start the project.
 
    ```shell
    npm run dev
