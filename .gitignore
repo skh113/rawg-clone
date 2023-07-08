@@ -1,3 +1,6 @@
+# Envorment
+.env
+
 # Logs
 logs
 *.log

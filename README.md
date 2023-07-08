@@ -1,7 +1,16 @@
 # Rawg-clone app
 
-to start the project, simply type this command in terminal
+to start the project,
 
-```shell
-npm run dev
-```
+1. first install the dependencies.
+
+   ```shell
+   cd rawg-clone
+   npm i
+   ```
+
+2. simply start the project.
+
+   ```shell
+   npm run dev
+   ```
