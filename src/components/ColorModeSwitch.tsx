@@ -1,7 +1,9 @@
 import { HStack, Switch, Text, useColorMode } from "@chakra-ui/react";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const ColorModeSwitch = () => {
   const { toggleColorMode, colorMode } = useColorMode();
+  const iconSize = 25;
 
   return (
     <HStack>
@@ -10,7 +12,11 @@ const ColorModeSwitch = () => {
         isChecked={colorMode === "dark"}
         onChange={toggleColorMode}
       />
-      <Text whiteSpace="nowrap">Dark Mode</Text>
+      {colorMode === "dark" ? (
+        <MdLightMode size={iconSize} />
+      ) : (
+        <MdDarkMode size={iconSize} />
+      )}
     </HStack>
   );
 };
