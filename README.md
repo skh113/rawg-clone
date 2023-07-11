@@ -16,3 +16,5 @@ Follow these steps to start the project:
    ```shell
    npm run dev
    ```
+
+enjoy
