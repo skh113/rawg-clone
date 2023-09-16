@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { AxiosRequestConfig, CanceledError } from "axios";
 
-interface FetchResponse<T> {
+export interface FetchResponse<T> {
   count: number;
   results: T[];
 }
@@ -10,7 +10,7 @@ interface FetchResponse<T> {
 const useData = <T>(
   endpoint: string,
   requestConfig?: AxiosRequestConfig,
-  dependencies?: any
+  dependencies?: any,
 ) => {
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState("");
@@ -39,7 +39,7 @@ const useData = <T>(
 
       return () => controller.abort();
     },
-    dependencies ? [...dependencies] : []
+    dependencies ? [...dependencies] : [],
   );
 
   return { data, error, isLoading };
