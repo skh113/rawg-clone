@@ -3,13 +3,14 @@ import axios, { AxiosRequestConfig } from "axios";
 const axiosInstance = axios.create({
   baseURL: "https://api.rawg.io/api",
   params: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     key: import.meta.env.VITE_API_KEY,
   },
 });
 
 export interface FetchResponse<T> {
   count: number;
-  next: string | null;
+  next?: string | null;
   results: T[];
 }
 
