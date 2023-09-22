@@ -11,7 +11,7 @@ import {
   FaAndroid,
   FaApple,
 } from "react-icons/fa";
-import { Platform } from "../entities/platform.ts";
+import Platform from "../entities/platform.ts";
 
 interface Props {
   platforms: Platform[];
